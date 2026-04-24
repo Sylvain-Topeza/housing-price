@@ -1,10 +1,8 @@
 # Spatial Analysis of Paris Housing Prices — Endogenous Regionalization of the Real Estate Market
 
-This repository archives a research project conducted as part of the **Research Elective of ENSAE Paris (2025)**, supervised by **Prof. Antonin Bergeaud (HEC Paris, Associate Professor of Economics; 2025 Best Young French Economist Award)**.
+This repository archives a research project conducted as part of the **Research Elective of HEC Paris (2026)**, supervised by **Prof. Antonin Bergeaud (HEC Paris, Associate Professor of Economics; 2025 Best Young French Economist Award)**.
 
 It analyzes the spatial heterogeneity of housing prices in Paris using the public French real estate transaction database (DVF+) and challenges the economic relevance of the 20 administrative *arrondissements* as units of analysis.
-
-> **Topeza, S. (2025).** *Spatial Analysis of Paris Housing Prices: Endogenous Regionalization and the Limits of Administrative Boundaries.* Research Elective, ENSAE Paris.
 
 ## 📖 Overview
 
@@ -80,6 +78,6 @@ Released under the **MIT License**.
 
 ## 🙋 Acknowledgements
 
-Conducted as a research elective project at **ENSAE Paris** under the supervision of **Prof. Antonin Bergeaud (HEC Paris)**, whose guidance on spatial econometrics and methodology shaped the direction of this work.
+Conducted as a research elective project at **HEC Paris** under the supervision of **Prof. Antonin Bergeaud (HEC Paris)**, whose guidance on spatial econometrics and methodology shaped the direction of this work.
 
 Data provided by **Cerema (DVF+)**, **Etalab / data.gouv.fr**, and **Open Data Paris**.
