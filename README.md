@@ -1,6 +1,6 @@
 # Spatial Analysis of Paris Housing Prices — Endogenous Regionalization of the Real Estate Market
 
-This repository archives a research project conducted as part of the **Research Elective of HEC Paris (2026)**, supervised by **Prof. Antonin Bergeaud (HEC Paris, Associate Professor of Economics; 2025 Best Young French Economist Award)**.
+This repository archives a research project conducted as part of the **Research Elective of HEC Paris (2026)**, supervised by **Prof. Antonin Bergeaud (HEC Paris, Associate Professor of Economics, 2025 Best Young French Economist Award)**.
 
 It analyzes the spatial heterogeneity of housing prices in Paris using the public French real estate transaction database (DVF+) and challenges the economic relevance of the 20 administrative *arrondissements* as units of analysis.
 
@@ -35,7 +35,7 @@ Building on the DVF+ public dataset, this project:
 ## 🗂 Repository structure
 
 - `notebooks/analysis.ipynb` — full analysis pipeline (Phases 1 to 3)
-- `outputs/` — exported figures and the interactive `folium` map (HTML)
+- `outputs/` — exported figures and `folium` maps
 - `requirements.txt` — Python dependencies
 
 > Raw DVF data is not redistributed in this repository. See the Data Access section below to obtain it from the official source.
@@ -44,7 +44,7 @@ Building on the DVF+ public dataset, this project:
 
 - **DVF+ Open Data (Cerema):** [cerema.app.box.com/v/dvfplus-opendata](https://cerema.app.box.com/v/dvfplus-opendata/folder/316766049383) — raw Paris transactions (`mutations_d75.csv`, department 75)
 - **DVF geocoded referential (Etalab, data.gouv.fr):** [files.data.gouv.fr/geo-dvf](https://files.data.gouv.fr/geo-dvf/latest/csv/) — parcel-level GPS coordinates, fetched on demand from the notebook
-- **Administrative boundaries (Open Data Paris):** arrondissement polygons in GeoJSON, fetched on demand from the notebook
+- **Administrative boundaries (Open Data Paris):** district polygons in GeoJSON, fetched on demand from the notebook
 
 ## 🚀 Quick Start
 
@@ -55,7 +55,7 @@ Building on the DVF+ public dataset, this project:
 2. Download `mutations_d75.csv` from the DVF+ link above and place it at the repository root.
 3. Open and run `notebooks/analysis.ipynb`. Geocoding and map background data are fetched at runtime.
 
-## 🔭 Ongoing Work — Phase 4
+## 🔭 Ongoing Work
 
 Current work extends the analysis by integrating external variables from the **Paris Open Data** platform (proximity to green spaces, street trees, public transport stations, public facilities, noise exposure) to model the residual price variance left unexplained by pure geography. The aim is to quantify which urban amenities drive micro-local valuation and to what extent they account for the roughly 70% of variance that spatial regionalization alone cannot capture.
 
@@ -65,12 +65,6 @@ Current work extends the analysis by integrating external variables from the **P
 - **Contiguity approximation.** The contiguity graph is built from a k-nearest-neighbor graph (k = 6) on cadastral centroids rather than strict polygon adjacency (Queen/Rook). This produces occasional cross-Seine artifacts in the interactive map that do not reflect real economic continuities.
 - **Missing intrinsic features.** DVF does not record floor, building condition, view, or construction year. A substantial share of the residual variance is therefore structural rather than spatial.
 - **Arbitrary outlier bounds.** Price filtering between 1,000 and 30,000 EUR/m² is a conservative heuristic; tighter domain-driven thresholds could marginally change descriptive statistics.
-
-## 📚 Citation
-
-If you use this repository, please cite:
-
-- Topeza, S. (2025). *Spatial Analysis of Paris Housing Prices: Endogenous Regionalization and the Limits of Administrative Boundaries.* Research Elective, ENSAE Paris, supervised by A. Bergeaud (HEC Paris).
 
 ## 📜 License
 
