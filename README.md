@@ -34,7 +34,7 @@ Building on the DVF+ public dataset, this project:
 
 ## 🗂 Repository structure
 
-- `notebooks/analysis.ipynb` — full analysis pipeline (Phases 1 to 3)
+- `analysis.ipynb` — full analysis pipeline (Phases 1 to 3)
 - `outputs/` — exported figures and `folium` maps
 - `requirements.txt` — Python dependencies
 
